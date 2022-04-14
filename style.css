@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    font-family: FreeMono, monospace;
+}
+
+/* Estilizando o texto grande no começo da página */
+h1 {
+    color:  rgba(118, 47, 47, 0.767);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40pt;
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    display: block;
+    padding-top: 40px;
+}
+/* Estilizando o retângulo onde as informações são inseridas */
+.inserir-informações {
+    display: block;
+    background-color: rgb(196, 170, 170);
+    border-radius: 10px;
+    margin: 15px 15px 2px 15px;
+    padding-bottom: 20px;
+}
+
+/* Estilizando o retângulo onde as informações aparecem */
+
+.informações {
+    width: 80%;
+    background-color: rgb(196, 170, 170);
+    margin: 3px;
+    padding: 6px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+/* Estilizando o botão de adicionar produto */
+.botão {
+    background-color: #904d4d;
+    font-family: Andale Mono, monospace;
+    text-align: left;
+    font-weight: bolder;
+    color: #380b0b;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding: 12px;
+    margin-top: 14px;
+}
+
+/* Estilizando o botão de remover produto */
+.botao-tabela {
+    background-color: #904d4d;
+    font-family: Andale Mono, monospace;
+    font-weight: bolder;
+    color: #380b0b;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding: 5px 10px 5px 10px;
+}
+
+#group {
+    margin: 6px 15px 6px 15px;
+}
+
+/* Estilizando os componentes da tabela onde os produtos são adicionados */
+.mostra-produtos {
+    text-align: center;
+    background-color: rgb(196, 170, 170);
+    font-size: 12px;
+    border-radius: 10px;
+    padding: px;
+}
+
+.mostra-produtos th {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.219);
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.mostra-produtos td {
+    padding: 6px 0px 6px 0px;
+    border-bottom: solid 0.5px #0000001f;
+}
+
+/* Ajustando o tamanho dos retângulos onde aparecem as informações */
+.rectangle {
+    max-width: 1000px;
+    margin: 6px auto;
+}

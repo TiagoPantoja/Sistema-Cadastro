@@ -1,0 +1,38 @@
+<!-- Projeto feito com inspirações nos repositórios: https://github.com/Otavio15/CONTROLE-DE-ESTOQUE-WEB e https://github.com/alpdias/stock-control, além do site JavaScript Responsivo -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prova 1B Programação de Software</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- A preferência de leitura do código é para mostrar os produtos-->
+    <body onload="mostrarResultado()">
+    <!-- Cria um texto grande no começo da página-->
+                <h1>Sistema Entrada de Produtos Loja CESU$TORE</h1>
+            </header>
+    <!--Cria um retângulo onde o usuário irá inserir produto, quantidade e o código, além de ter o botão adicionar produto -->
+            <section id="informações" class="inserir-informações rectangle">
+                <input class="informações" type="text" name="produto" id="produto" placeholder="Nome do Produto: "/></br>
+                <input class="informações" type="number" name="quantidade" id="quantidade" placeholder="Quantidade do Produto: "/></br>
+                <input class="informações" type="text" name="codigo" id="codigo" placeholder="Código do Produto: "/></br>
+                <button class="botão" name="adicionar" id="adicionar" onclick="validar(), adicionar(), mostrarResultado()">Adicionar Novo Produto</button
+            </section>
+        <!-- Cria outro retângulo onde irão aparecer os produtos adicionados, com opção de excluí-los-->
+            <section id="produtos">
+                <div id="group">
+                    <table class="mostra-produtos rectangle" style="table-layout: fixed; width: 100%;">
+                        <th>Nome do Novo Produto</th>
+                        <th>Quantidade do Novo Produto</th>
+                        <th>Código do Novo Produto</th>
+                        <th>Remover Produto do Estoque</th>
+                        <tbody id="dados"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
